@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--meu css-->
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <!--icone da página-->
+    <link rel="icon" href="img/logomarca.jpg">
+    <title>TripLovers</title>
+</head>
+
+<body class="bg-pacotes">
+    
+  <!--criando formulário-->
+  <div class="container">
+    <div class="form-image">
+        <img src="img/logomarca.jpg" alt="">
+    </div>
+    <div class="form">
+        <form action="https://formsubmit.co/your@email.com" method="POST">
+            <div class="form-header">
+                <div class="title">
+                    <h1>Pacotes</h1>
+                </div>
+                <div class="botao-voltar">
+                    <button><a href="index.html">Voltar</a></button>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <div class="input-box">
+                    <label for="firstname">Primeiro Nome</label>
+                    <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="lastname">Sobrenome</label>
+                    <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
+                </div>
+                <div class="input-box">
+                    <label for="email">E-mail</label>
+                    <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="cep">CEP</label>
+                    <input id="cep" type="text" placeholder="Digite o CEP do local" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="rua">Endereço</label>
+                    <input id="rua" type="text" name="rua" placeholder="Digite o endereço do local" required>
+                </div>
+
+
+                <div class="input-box">
+                    <label for="numero">Número</label>
+                    <input id="numero" type="text" name="numero" placeholder="Digite o número do local " required>
+                </div>
+
+                <div class="input-box">
+                    <label for="bairro">Bairro</label>
+                    <input id="bairro" type="text" name="bairro" placeholder="Digite o bairro do local" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="cidade">Cidade</label>
+                    <input id="cidade" type="text" name="cidade" placeholder="Digite a cidade do local" required>
+                </div>
+
+                <div class="input-box">
+                    <label for="estado">Estado</label>
+                    <input id="estado" type="text" name="estado" placeholder="Digite o Estado do local" required>
+                </div>
+
+            </div>
+
+            <div class="pacotes-inputs">
+                <div class="pacotes-title">
+                    <h6>Pacotes promocionais</h6>
+                </div>
+
+                <div class="pacotes-group" >
+                    <div class="pacotes-input" onselect="pacoteEscolhido()">
+                        <input id="familia" type="radio" name="pacote" value="Pacote família">
+                        <label for="familia">Pacote família</label>
+                    </div>
+
+                    <div class="pacotes-input" onselect="pacoteEscolhido()">
+                        <input id="lua-de-mel" type="radio" name="pacote" value="Pacote lua de mel">
+                        <label for="lua-de-mel">Pacote lua de mel</label>
+                    </div>
+
+                    <div class="pacotes-input" onselect="pacoteEscolhido()">
+                        <input id="amigos" type="radio" name="pacote" value="Pacote amigos">
+                        <label for="amigos">Pacote amigos</label>
+                    </div>
+
+                    <div class="pacotes-input" onselect="pacoteEscolhido()">
+                        <input id="passeio" type="radio" name="pacote" value="Pacote passeio turístico">
+                        <label for="passeio">Pacote passeio turístico</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="confirmar-button" onclick="pacoteEscolhido()" >
+                <button id="btnConfirmar"><a href="#">Confirmar compra</a></button>                    
+            </div>
+            
+
+        </form>
+    </div>
+</div>
+</body>
+<script src="js/script.js"></script>
+
+</html>
